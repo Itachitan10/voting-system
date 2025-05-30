@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('https://scontent.fcrk2-3.fna.fbcdn.net/v/t39.30808-6/305273706_446396524179644_6525038252787594741_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFsuNgtMf1HeufxisK-Xqv9TGtkDz3-REpMa2QPPf5EShPamKuGkKUu6ez_dZY7wE7mthpBpNVwCGnepfaEbGyv&_nc_ohc=9dTm2cjYZHAQ7kNvwHHEQ7Y&_nc_oc=AdnwFqNb_pSA53tPcu0fVoHqfgyGlMbo9GwHMWOsRDMFYPgFyy5DxUdufKigc9eF_W8&_nc_zt=23&_nc_ht=scontent.fcrk2-3.fna&_nc_gid=v7z1v0CY9Lvq51txwcpicw&oh=00_AfKFRdE9KjWM-0tUS7ZZsZ-TTy1W0vvFoXzh6MCRxf7OnQ&oe=6823A2C1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    color:  #e2ede2;
+    justify-content: center;
+    padding: 40px;
+  }
+
+
+  .voting-container {
+    background-color: rgba(4, 3, 3, 0.5); 
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .position-group {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+  
+  .position-group h2 {
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .voter-info {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .voter-info h2 {
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  .voter-info label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .voter-info input,
+  .voter-info textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  

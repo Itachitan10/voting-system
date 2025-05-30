@@ -1,0 +1,154 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .search-bar {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .search-bar input {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    .search-bar input:focus {
+      border-color: #007bff;
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      min-width: 900px;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+      word-wrap: break-word;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    th {
+      background-color: #007bff;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    td {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .delete-btn {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .delete-btn:hover {
+      background-color: #d13b3b;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      .search-bar input {
+        max-width: 100%;
+      }
+
+      table {
+        font-size: 0.8rem;
+      }
+
+      th, td {
+        padding: 8px;
+      }
+
+      .delete-btn {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      th, td {
+       text-align: center;
+        padding: 6px;
+        font-size: 0.75rem;
+      }
+
+      .delete-btn {
+        padding: 4px 8px;
+        font-size: 0.7rem;
+      }
+    }
+
+
+    .home{ 
+  
+  padding: 10px;
+  text-align: center;
+}
+#home{ 
+  height: 30px;
+  width: 60px;
+  background-color: blue;
+  border: none;
+  color: #ddd;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-style: italic;
+  box-shadow: 1px 5px 6px 3px ;
+}

@@ -1,0 +1,41 @@
+body{ 
+  display: flex;
+  display: grid;
+  justify-content: center;
+}
+
+
+.login-form{ 
+  margin-top: 100px;
+  border: 1px solid black;
+  padding: 100px;
+  text-align: center;
+  width: 140px;
+  border: none;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: rgba(14, 138, 240, 0.363);
+  box-shadow: 0px 4px  30px 1px ;
+}
+
+input{ 
+  font-size: small;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+button{ 
+  font-weight: bolder;
+  background-color: white;
+  color: black;
+  border: none;
+  height: 40px;
+  width: 100px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+label{ 
+  font-size: 20px;
+  font-weight: bolder;
+  color: #3b3f3f;
+}

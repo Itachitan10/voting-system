@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Council Voting</title>
+  <link rel="stylesheet" href="../css/voting_system.css">
+</head>
+<body>
+
+  <div  class="voting-container">
+    <h1 style="color: aliceblue;">🗳️ Student Voting Form</h1>
+   
+
+      <!-- President -->
+      <div class="position-group" id="press">
+         <h2 style="color: aliceblue;">President</h2>
+      </div>
+
+      <!-- Vice President -->
+      <div class="position-group" id="viceP">
+        <h2 style="color: aliceblue;">Vice President</h2>
+      </div>
+
+      <!-- Secretary -->
+      <div class="position-group" id="Sec">
+        <h2 style="color: aliceblue;">Secretary</h2>
+      </div>
+
+      <!-- Treasurer -->
+      <div class="position-group" id="Tre">
+        <h2 style="color: aliceblue;">Treasurer</h2>
+      </div>
+
+      <!-- Auditor -->
+      <div class="position-group" id="Aud">
+        <h2 style="color: aliceblue;">Auditor</h2>
+      </div>
+
+      <!-- P.I.O -->
+      <div class="position-group" id="pio">
+        <h2 style="color: aliceblue;">P.I.O</h2>
+      </div>
+
+      <!-- Grade Representative -->
+      <div class="position-group" id="Grade">
+        <h2 style="color: aliceblue;">Grade Representative</h2>
+      </div>
+
+      <!-- Voter Information -->
+      <div class="voter-info">
+        <h2 style="color: aliceblue;">Your Information</h2>
+        <label>
+          Full Name:
+          <input type="text"  id="name" name="voter_name"   placeholder="pangalang mo" required  />
+        </label>
+
+        <label>
+          Grade & Section:
+          <input type="text" id="grade_section" name="voter_grade_section" placeholder="example : Grade 1 Matulugin" required/>
+        </label>
+      </div>
+ 
+      <button  id="submit">Submit Vote</button>
+  
+  </div>
+
+</body>
+<script src="../js/voting_user.js"></script>
+</html>

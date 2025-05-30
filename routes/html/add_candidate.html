@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard Voting — Flexbox Layout</title>
+  <style>
+
+
+
+#submitData{
+  border: none;
+    background-color: #3f7bd6;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+
+}
+
+
+
+  .position-box input[type="text"]:hover,
+  .position-box select:hover {
+    border-color: #0D6EFD;
+    background-color: #e6f0ff;
+  }
+    body {
+      background-image: url('https://scontent.fcrk2-3.fna.fbcdn.net/v/t39.30808-6/305273706_446396524179644_6525038252787594741_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFsuNgtMf1HeufxisK-Xqv9TGtkDz3-REpMa2QPPf5EShPamKuGkKUu6ez_dZY7wE7mthpBpNVwCGnepfaEbGyv&_nc_ohc=9dTm2cjYZHAQ7kNvwHHEQ7Y&_nc_oc=AdnwFqNb_pSA53tPcu0fVoHqfgyGlMbo9GwHMWOsRDMFYPgFyy5DxUdufKigc9eF_W8&_nc_zt=23&_nc_ht=scontent.fcrk2-3.fna&_nc_gid=v7z1v0CY9Lvq51txwcpicw&oh=00_AfKFRdE9KjWM-0tUS7ZZsZ-TTy1W0vvFoXzh6MCRxf7OnQ&oe=6823A2C1');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff9800;
+      margin-bottom: 30px;
+    }
+
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .position-box {
+      background: #f2f9fc; 
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .position-box:hover {
+      transform: scale(1.02);
+    }
+
+    .position-box h2 {
+      margin-bottom: 15px;
+      color: #333;
+      text-align: center;
+    }
+
+    .position-box input,
+    .position-box select {
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    #submitAllBtn {
+      background: #ff9800;
+      color: #fff;
+      font-weight: bold;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      margin: 30px auto 0;
+      display: block;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    #submitAllBtn:hover {
+      background: #ffa726;
+    }
+    .home{ 
+  
+  padding: 10px;
+  text-align: center;
+    }
+  #home{ 
+    height: 30px;
+    width: 60px;
+    background-color: blue;
+    border: none;
+    color: #ddd;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-style: italic;
+    box-shadow: 1px 5px 6px 3px ;
+    }
+
+  </style>
+</head>
+<body>
+  
+
+
+   <div class="home"> 
+    <button id="home">home</button>
+   </div>
+
+  <h1>ELEMENTARY ADMIN DASHBOARD — CANDIDATE REGISTRATION</h1>
+
+  <div class="dashboard" id="positions"></div>
+
+  
+</body>  
+<script src="../js/add_candidate.js"></script>
+</html>

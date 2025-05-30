@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voting Winners Result</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .winner-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .winner-box {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .winner-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .position {
+      font-size: 20px;
+      font-weight: bold;
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 24px;
+      color: #27ae60;
+      font-weight: bold;
+    }
+
+    .votes {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #555;
+    }
+
+  
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #777;
+      font-size: 14px;
+    }
+    .home{ 
+  
+  padding: 10px;
+  text-align: center;
+}
+#home{ 
+  height: 30px;
+  width: 60px;
+  background-color: blue;
+  border: none;
+  color: #ddd;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-style: italic;
+  box-shadow: 1px 5px 6px 3px ;
+}
+
+  </style>
+</head>
+<body>
+    <div class="home"> 
+    <button id="home">home</button>
+  </div>
+
+  <h1>Election Winners</h1>
+
+  <div class="winner-container" >
+    <div class="winner-box">
+      <div class="position" id="press">President</div>
+   
+    </div>
+
+    <div class="winner-box">
+      <div class="position" id="Vice">Vice President</div>
+ 
+    </div>
+
+    <div class="winner-box">
+      <div class="position" id="sec">Secretary</div>
+ 
+    </div>
+
+    
+
+    <div class="winner-box">
+      <div class="position" id="tre">Treasurer</div>
+
+    </div>
+
+
+
+    <div class="winner-box">
+      <div class="position" id="audi">Auditor</div>
+
+    </div>
+
+
+    <div class="winner-box">
+      <div class="position" id="pio"> P.I.O</div>
+
+    </div>
+    
+  
+    <div class="winner-box">
+      <div class="position" id="grade"> Grade Representative</div>
+
+    </div>
+
+    
+  </div>
+
+</body>
+<script src="../js/winner.js"></script>
+</html>

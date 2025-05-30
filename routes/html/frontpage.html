@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CENTRAL ONE</title>
+    <style>
+      #mobile-menu {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+        display: flex;
+        flex-direction: column;
+      }
+      #mobile-menu.show {
+        max-height: 500px;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div 
+      class="relative min-h-screen w-screen bg-cover bg-center"
+      style="background-image: url('../image/488657838_1094736966012260_1841067587763865785_n.jpg')"
+    >
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <div class="relative z-10">
+        <nav class="flex items-center justify-between p-3 inset-0 bg-blue-500 md:px-20">
+          <h1 class="text-[black]-100 text-2xl font-bold">
+            CENTRAL <span class="text-[yellow]">ONE NATIONAL HIGH SCHOOL</span>
+          </h1>
+          <button id="menu-btn" aria-label="Toggle menu" class="md:hidden text-yellow-400 focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+          <ul class="hidden md:flex gap-8 text-yellow-200 font-bold text-l">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div id="mobile-menu"
+          class="absolute top-16 left-0 w-full bg-[#221f1f] text-yellow-300 font-bold text-center gap-5 py-5 md:hidden">
+          <a href="#" class="block py-2 hover:bg-[#2c2c2c]">Home</a>
+          <a href="#about" class="block py-2 hover:bg-[#2c2c2c]">About</a>
+          <a href="#contact" class="block py-2 hover:bg-[#2c2c2c]">Contact</a>
+        </div>
+
+        <div class="flex flex-col-reverse md:flex-row items-center justify-center text-center md:text-left gap-5 px-5 md:px-20 mt-10">
+          <div class="flex-1">
+            <h1 class="text-yellow-400 text-4xl md:text-5xl font-bold">
+              CENTRAL 0NE <span class="text-white">EM SCHOOL</span>
+            </h1>
+            <p class="text-white mt-5 leading-relaxed">
+              “Where learning is fun, friendship grows, and every student shines. We’re proud to nurture curious minds, build strong values, and create a safe, happy place for everyone to learn and grow together.”
+            </p>
+            <button class="mt-8 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded transition">Learn More</button>
+          </div>
+          <div class="flex-1">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.WPaT4RdALAKSzqH1yHpT7AHWHU?rs=1&pid=ImgDetMain"
+              alt="ramen" class="rounded-[20%] w-70 h-78 object-cover mx-auto" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="bg-[#1e1e1e] text-yellow-300 py-16 px-5 md:px-20">
+      <h2 class="text-4xl font-bold mb-6 text-center">About Us</h2>
+      <p class="text-white leading-relaxed text-center max-w-3xl mx-auto">
+        Central One National High School is a place where students discover their passions, build friendships, and prepare for a bright future. Our mission is to nurture young minds and create a supportive, fun, and inclusive environment for every learner.
+      </p>
+    </section>
+
+
+    <section id="contact" class="bg-[#111111] text-yellow-300 py-16 px-5 md:px-20">
+      <h2 class="text-4xl font-bold mb-6 text-center">Contact Us</h2>
+      <div class="flex flex-col md:flex-row gap-10 justify-center mb-10">
+        <div class="text-white text-center md:text-left">
+          <h3 class="text-2xl font-semibold mb-2">Address:</h3>
+          <p>Rosxas blvd ,sancaarlos city pangasinan</p>
+        </div>
+        <div class="text-white text-center md:text-left">
+          <h3 class="text-2xl font-semibold mb-2">Phone:</h3>
+          <p>+63 912 345 6789</p>
+        </div>
+        <div class="text-white text-center md:text-left">
+          <h3 class="text-2xl font-semibold mb-2">Email:</h3>
+          <p>madelinavalerio@gmail.com</p>
+        </div>
+      </div>
+
+      <form class="max-w-xl mx-auto bg-[#1e1e1e] p-8 rounded-lg">
+        <div class="mb-4">
+          <label class="block text-white mb-2">Name</label>
+          <input type="text" class="w-full p-3 rounded bg-gray-800 text-white focus:outline-none" placeholder="Your Name" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-white mb-2">Email</label>
+          <input type="email" class="w-full p-3 rounded bg-gray-800 text-white focus:outline-none" placeholder="Your Email" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-white mb-2">Message</label>
+          <textarea rows="4" class="w-full p-3 rounded bg-gray-800 text-white focus:outline-none" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit"
+          class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded transition">Send
+          Message</button>
+      </form>
+    </section>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

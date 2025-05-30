@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Voting Dashboard</title>
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <a href="../html/totalcandadate.html"> Registerd Candidates</a>
+    <a href="../html/totalVotes.html">Total Votes</a>
+    <a href="../html/winner.html"> Results</a>
+    <a href="../html/add_candidate.html"> Add Candidate</a>
+    <button type="button" id="logout-btn"> logout</button>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1 id="username">Wellcome, </h1>
+      <span id="date"></span>
+    </div>
+
+    <div class="dashboard-cards">
+      <div class="card" >
+        <h5  id="totalcan"> Total Candidates</h5>
+        <!-- data -->
+       </div>
+
+      <div class="card">
+        <h5 id="TotalVotes">Total Votes</h5>
+      </div>
+    </div>
+
+    <div class="voting-management">
+      <h2>Student link vote</h2>
+      <div class="voting-options">
+        <div class="option">
+          <h3>Voting Link</h3>
+          <button id="btn" >View </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="../js/admin.js"></script>
+</html>
